@@ -64,7 +64,7 @@ class XtradesClipboardConvertor(object):
         txt = txt.replace('@ ', '@').replace('/ ', '/').replace(' /', '/').replace('  ', ' ').replace('$', '')
 
         if not len(txt.split()) == 5:
-            self.outputd_add('\n################\nERROR - Unable to split play in to proper components.\n'
+            self.output_add('\n################\nERROR - Unable to split play in to proper components.\n'
                             'The format needs to be "Action (BTO, STO) Ticker (TSLA, AAPL) Expiration (10/28) Stike (125c) Price (@2.50)"')
             return
 
